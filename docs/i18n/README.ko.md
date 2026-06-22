@@ -106,7 +106,7 @@ flowchart LR
 ["full-loop"](#full-loop--종단-간end-to-end-오케스트레이션)을 참조하세요.
 
 ```mermaid
-flowchart TB
+flowchart LR
   S1["1 · 프롬프트 구체화"] --> S2["2 · 조건부 리서치"] --> S3["3 · 계획·수용기준 동결"]
   S3 --> G1{{"게이트 1<br/>계획 승인"}}
   G1 --> S5["5 · 실행"]
