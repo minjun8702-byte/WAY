@@ -6,41 +6,29 @@
 
 **Built with** [insane-search](https://github.com/fivetaku/insane-search) and [deep-research](https://github.com/fivetaku/gptaku_plugins) by [fivetaku](https://github.com/fivetaku) (MIT) · full attribution in [CREDITS.md](CREDITS.md)
 
-**Your AI shouldn't ask "who are you?" every session.** W.A.Y? reads the memory your
-CLI agent already holds about you and turns it into a durable, hallucination-guarded
-harness — no profile forms, no code required.
+> *"The most personal is the most creative."* — Martin Scorsese
 
-> The most personal thing is the best-fitting environment.
-> A personal AI harness that learns **you** — not a framework you learn.
+I'm not a developer, and I'm no programming expert. But I work in planning, and I think
+of myself as someone who works across a lot of areas. For the past year I chased the
+words of well-known people in the AI scene — I tried Andrej Karpathy's wiki, Garry Tan's
+gstack, and many others' harnesses, skills, and loops — but they were never mine, and
+because they weren't mine, it was hard to get the results I wanted out of them.
 
----
+The conclusion I've reached, as of now, is that the most personal thing is the most
+effective one (just like Scorsese said). Everyone is bound to differ in every way — how
+they think, how they talk to their AI, what they expect back — from start to finish.
 
-## What this is
+So I prepared this: a kit to make the most personal thing, plus the features to secure a
+minimum of stability. The W.A.Y? ("Who Are You?") harness is a beginner's kit that reads
+the sessions and memory accumulated in the Claude you've each been working with, guesses
+your way of working, your speech patterns, and your expected results, and builds a
+harness that's yours.
 
-W.A.Y? ("Who Are You?") is a thin, durable operating layer for one person's AI
-collaboration, built on the premise **"I'm not a developer."** You do not configure it
-by filling in a profile. You run it, and it analyzes the working memory your local
-Claude Code (or another CLI agent) already holds about you — past conversations,
-settings, repos, commit rhythm — and turns that into a structured, durable model of your
-instruction style, preferences, and voice. Your way of working becomes an **asset** the
-harness reuses, instead of context you re-explain every session.
+I tried to lay out, structurally, the parts I think most need to hold. It carries three
+core concepts, one core tool (`/full-loop`), and nine foundational pieces of philosophy.
 
-The harness keeps only **meta-information** (events, patterns, definitions, statistics).
-Real operational data stays isolated in separate project repos. Data doesn't leak;
-lessons do.
-
----
-
-## Core concept
-
-- **Most personal = best fit** — a generic agent is optimal for nobody; W.A.Y? derives
-  the fit from data that already describes you.
-- **Not for developers** — no code required; an extraction step drafts your model, you
-  review and approve.
-- **Memory becomes an asset** — a one-time, re-runnable extraction turns your CLI's
-  accumulated memory into a reviewed, evolving self-definition.
-
-Deep dive: [`CONCEPT.en.md`](CONCEPT.en.md).
+Even a kit built this way won't end up speaking for you. I recommend using it as a base
+to grow an environment that's even more you — precisely, and flexibly.
 
 ---
 
@@ -113,6 +101,18 @@ See [`skills/07_orchestration/full-loop/SKILL.md`](skills/07_orchestration/full-
 
 > **Independent public release planned (next work)** — full-loop will be split into its
 > own standalone repository.
+
+---
+
+## How to start
+
+1. Clone this repository.
+2. Run the `sde-extractor` in Claude Code (or onboard via `/full-loop`). It reads the
+   sessions and memory built up in your CLI and drafts a self-definition for you.
+3. Review the draft and approve it, and your own harness goes live.
+
+See [Quick Start](#quick-start) and [ONBOARDING.en.md](ONBOARDING.en.md), with deeper
+background in [CONCEPT.en.md](CONCEPT.en.md).
 
 ---
 
