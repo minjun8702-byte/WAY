@@ -14,9 +14,10 @@ guessing.
 
 | File (suggested) | Purpose | Status |
 |------------------|---------|--------|
+| `hero.png` | Wide header image shown at the top of the README. | **in use** |
 | `logo.svg` | Primary mark. Square, scalable, works on light and dark backgrounds. | placeholder |
 | `logo.png` | Raster fallback of the logo for places SVG isn't supported. | placeholder |
-| `banner.png` | Wide header image for the README top / social preview. | placeholder |
+| `banner.png` | Alternate wide header / social preview. | placeholder |
 | `icon.png` | Small square icon (favicon-style, app-tile use). | placeholder |
 
 ---

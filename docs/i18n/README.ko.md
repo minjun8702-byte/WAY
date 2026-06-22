@@ -1,5 +1,9 @@
 # W.A.Y? — Who Are You? (저는 개발자가 아닙니다)
 
+<p align="center">
+  <img src="../../assets/hero.png" alt="W.A.Y? — Who Are You?" width="100%">
+</p>
+
 **한국어** | [English](README.en.md) | [中文](README.zh.md)
 
 ![License](https://img.shields.io/badge/license-MIT-blue) ![Built for](https://img.shields.io/badge/built%20for-Claude%20Code-8A2BE2) ![For](https://img.shields.io/badge/for-non--developers-orange) ![Harness](https://img.shields.io/badge/harness-v0.1-green)
