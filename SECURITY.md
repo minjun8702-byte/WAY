@@ -98,10 +98,10 @@ reference it instead:
 
 | Version | Supported |
 |---------|-----------|
-| v1.x    | Yes — receives security and PII fixes. |
-| < v1.0  | No — pre-release; please upgrade to v1.x. |
+| v0.x    | Yes — receives security and PII fixes. |
+| < v0.1  | No — pre-release; please upgrade to v0.x. |
 
-Security and PII fixes target the current v1.x line.
+Security and PII fixes target the current v0.x line.
 
 ---
 

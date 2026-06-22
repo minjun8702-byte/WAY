@@ -2,7 +2,9 @@
 
 [한국어](README.ko.md) | [English](README.en.md) | **中文**
 
-![License](https://img.shields.io/badge/license-MIT-blue) ![Built for](https://img.shields.io/badge/built%20for-Claude%20Code-8A2BE2) ![For](https://img.shields.io/badge/for-non--developers-orange) ![Harness](https://img.shields.io/badge/harness-v1.0-green)
+![License](https://img.shields.io/badge/license-MIT-blue) ![Built for](https://img.shields.io/badge/built%20for-Claude%20Code-8A2BE2) ![For](https://img.shields.io/badge/for-non--developers-orange) ![Harness](https://img.shields.io/badge/harness-v0.1-green)
+
+**基于** [insane-search](https://github.com/fivetaku/insane-search) · [deep-research](https://github.com/fivetaku/gptaku_plugins) — 由 [fivetaku](https://github.com/fivetaku) 开发 (MIT) · 完整致谢见 [CREDITS.md](../../CREDITS.md)
 
 **你的 AI 不该每个会话都问一次"你是谁？"。** W.A.Y? 读取你的 CLI 智能体已经掌握的关于你的
 记忆（memory），并将其转化为一个耐久、防幻觉的框架（harness）—— 无需填写资料，也无需写代码。

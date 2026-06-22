@@ -2,7 +2,9 @@
 
 **한국어** | [English](README.en.md) | [中文](README.zh.md)
 
-![License](https://img.shields.io/badge/license-MIT-blue) ![Built for](https://img.shields.io/badge/built%20for-Claude%20Code-8A2BE2) ![For](https://img.shields.io/badge/for-non--developers-orange) ![Harness](https://img.shields.io/badge/harness-v1.0-green)
+![License](https://img.shields.io/badge/license-MIT-blue) ![Built for](https://img.shields.io/badge/built%20for-Claude%20Code-8A2BE2) ![For](https://img.shields.io/badge/for-non--developers-orange) ![Harness](https://img.shields.io/badge/harness-v0.1-green)
+
+**함께 사용한 도구** [insane-search](https://github.com/fivetaku/insane-search) · [deep-research](https://github.com/fivetaku/gptaku_plugins) — [fivetaku](https://github.com/fivetaku) 제작 (MIT) · 전체 출처 [CREDITS.md](../../CREDITS.md)
 
 **당신의 AI가 매 세션마다 "당신은 누구인가요?"라고 묻지 않아도 됩니다.** W.A.Y?는 당신의
 CLI 에이전트가 이미 당신에 대해 보유한 기억(memory)을 읽어, 견고하고 환각으로부터 보호되는

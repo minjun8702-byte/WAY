@@ -2,7 +2,9 @@
 
 [한국어](README.ko.md) | **English** | [中文](README.zh.md)
 
-![License](https://img.shields.io/badge/license-MIT-blue) ![Built for](https://img.shields.io/badge/built%20for-Claude%20Code-8A2BE2) ![For](https://img.shields.io/badge/for-non--developers-orange) ![Harness](https://img.shields.io/badge/harness-v1.0-green)
+![License](https://img.shields.io/badge/license-MIT-blue) ![Built for](https://img.shields.io/badge/built%20for-Claude%20Code-8A2BE2) ![For](https://img.shields.io/badge/for-non--developers-orange) ![Harness](https://img.shields.io/badge/harness-v0.1-green)
+
+**Built with** [insane-search](https://github.com/fivetaku/insane-search) and [deep-research](https://github.com/fivetaku/gptaku_plugins) by [fivetaku](https://github.com/fivetaku) (MIT) · full attribution in [CREDITS.md](../../CREDITS.md)
 
 **Your AI shouldn't ask "who are you?" every session.** W.A.Y? reads the memory your
 CLI agent already holds about you and turns it into a durable, hallucination-guarded
