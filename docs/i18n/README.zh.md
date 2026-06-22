@@ -2,6 +2,11 @@
 
 [한국어](README.ko.md) | [English](README.en.md) | **中文**
 
+![License](https://img.shields.io/badge/license-MIT-blue) ![Built for](https://img.shields.io/badge/built%20for-Claude%20Code-8A2BE2) ![For](https://img.shields.io/badge/for-non--developers-orange) ![Harness](https://img.shields.io/badge/harness-v1.0-green)
+
+**你的 AI 不该每个会话都问一次"你是谁？"。** W.A.Y? 读取你的 CLI 智能体已经掌握的关于你的
+记忆（memory），并将其转化为一个耐久、防幻觉的框架（harness）—— 无需填写资料，也无需写代码。
+
 > 最个人化的，就是最契合的环境。
 > W.A.Y? 是一个学习**你**的个人 AI 框架（harness），而不是一个要你去学的框架（framework）。
 
@@ -174,12 +179,58 @@ MEMORY 来源的正本（canonical）是 CLI 内置的 auto-memory；框架的 `
 
 ---
 
+## 要求
+
+| 要求 | 用途 |
+|------|------|
+| **Claude Code**（或任何能读取你的记忆、git 历史与设置的 CLI 智能体） | 运行框架与抽取步骤 |
+| **git** | 克隆仓库；抽取器会读取你的提交节奏 |
+| 可选插件：**insane-search**、**deep-research** | 更强的网络研究（绕过被封锁的来源、多来源事实核查） |
+| 可选：**codex / GPT-5.5**（付费，可选启用） | full-loop 内部的异厂（cross-vendor）独立评审 |
+
+只有前两项是必需的。其余一切均为可选启用，没有它们框架也能运行。
+
+---
+
 ## 入门
 
-入门是一份简短的清单 —— 克隆、（可选）安装插件、运行抽取器、审阅并批准你的自我定义，
-框架便已上线。每一步都会注明它所触及的文件。
+### 快速开始（Quick Start）
+
+```bash
+# 1. 克隆框架
+git clone https://github.com/minjun8702-byte/WAY.git
+cd WAY
+
+# 2.（可选）在 Claude Code 内安装网络研究插件
+/plugin install insane-search
+/plugin install deep-research
+
+# 3. 入门 —— 抽取器读取你的 CLI 记忆、git 与设置，
+#    然后起草你的自我定义（self-definition）
+run the sde-extractor
+
+# 4. 审阅草稿，然后在 decisions/pending.md 中批准
+#    （在你批准之前，不会应用任何实质性内容）
+```
+
+一份简短的清单 —— 克隆、（可选）安装插件（`insane-search`、`deep-research`）、运行
+`sde-extractor`、审阅并批准你的自我定义，框架便已上线。每一步都会注明它所触及的文件。
 
 完整指引：[`ONBOARDING.zh.md`](ONBOARDING.zh.md)。
+
+---
+
+## 使用示例
+
+你用平实的语言来驱动框架 —— 没有特殊语法。几个常见的开场白：
+
+- **端到端地执行某件事：** *"把这个 full-loop 一下"* / *"端到端跑完，只在关卡处问我"* ——
+  启动八阶段自主循环，仅在计划批准、外部影响与重试耗尽处停下。
+- **入门或重新入门：** *"运行 sde-extractor"* / *"重新读取我的记忆并更新我的自我定义"* ——
+  从累积的上下文起草或刷新你的用户模型。
+- **处理审批队列：** *"给我看看待批准的项目"* —— 呈现 `decisions/pending.md` 中等待的项目；
+  你通过编辑该文件来批准。
+- **带来源的深度研究：** *"带引用调研 X"* —— 扇出网络搜索、验证主张，返回一份带引用的报告而非猜测。
 
 ---
 

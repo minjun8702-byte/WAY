@@ -2,6 +2,12 @@
 
 **Language:** [한국어](docs/i18n/README.ko.md) | [English](docs/i18n/README.en.md) | [中文](docs/i18n/README.zh.md)
 
+![License](https://img.shields.io/badge/license-MIT-blue) ![Built for](https://img.shields.io/badge/built%20for-Claude%20Code-8A2BE2) ![For](https://img.shields.io/badge/for-non--developers-orange) ![Harness](https://img.shields.io/badge/harness-v1.0-green)
+
+**Your AI shouldn't ask "who are you?" every session.** W.A.Y? reads the memory your
+CLI agent already holds about you and turns it into a durable, hallucination-guarded
+harness — no profile forms, no code required.
+
 > The most personal thing is the best-fitting environment.
 > A personal AI harness that learns **you** — not a framework you learn.
 
@@ -127,13 +133,56 @@ See [`skills/07_orchestration/full-loop/SKILL.md`](skills/07_orchestration/full-
 
 ---
 
+## Requirements
+
+| Requirement | Needed for |
+|-------------|-----------|
+| **Claude Code** (or any CLI agent that can read your memory, git history, and settings) | Running the harness and the extraction step |
+| **git** | Cloning the repo; the extractor reads your commit rhythm |
+| Optional plugins: **insane-search**, **deep-research** | Stronger web research (bypasses blocked sources, multi-source fact-checking) |
+| Optional: **codex / GPT-5.5** (paid, opt-in) | Cross-vendor independent review inside full-loop |
+
+Only the first two are required. Everything else is opt-in and the harness runs without it.
+
+---
+
 ## Getting started
+
+### Quick Start
+
+```bash
+# 1. Clone the harness
+git clone https://github.com/minjun8702-byte/WAY.git
+cd WAY
+
+# 2. (optional) Install web-research plugins inside Claude Code
+/plugin install insane-search
+/plugin install deep-research
+
+# 3. Onboard — the extractor reads your CLI memory, git, and settings,
+#    then drafts your self-definition
+run the sde-extractor
+
+# 4. Review the draft, then approve it in decisions/pending.md
+#    (nothing material is applied until you approve)
+```
 
 A short checklist — clone, optionally install plugins (`insane-search`, `deep-research`),
 run the `sde-extractor`, review and approve your self-definition, and the harness is
 live. Each step names the files it touches.
 
 Full walkthrough: [`ONBOARDING.en.md`](ONBOARDING.en.md).
+
+---
+
+## Usage examples
+
+You drive the harness with plain language — no special syntax. A few common openers:
+
+- **Run something end-to-end:** *"full-loop this"* / *"run this end-to-end, ask me only at the gates"* — kicks off the eight-stage autonomous loop, stopping only at plan approval, external impact, and retry-exhausted.
+- **Onboard or re-onboard:** *"run the sde-extractor"* / *"re-read my memory and update my self-definition"* — drafts or refreshes your user model from accumulated context.
+- **Work the approval queue:** *"show me what's pending approval"* — surfaces the items waiting in `decisions/pending.md`; you approve by editing the file.
+- **Deep research with sources:** *"research X with citations"* — fans out web searches, verifies claims, and returns a cited report instead of a guess.
 
 ---
 
